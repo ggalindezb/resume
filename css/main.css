@@ -1,0 +1,100 @@
+:root {
+  --dark-gray: #353744;
+  --light-gray: #666666;
+  --light-green: #57BA86;
+  --dark-green: #00AB44;
+}
+
+body {
+  font-family: 'Raleway';
+}
+
+header {
+  padding-top: .25rem;
+  padding-left: .25rem;
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: .25rem;
+  color: var(--dark-gray);
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+header h2 {
+  margin: 0;
+  margin-bottom: .5rem;
+  color: var(--light-green);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  color: var(--light-gray);
+}
+
+header ul li {
+  list-style: none;
+  margin-bottom: .25rem;
+}
+
+header ul li i {
+  margin-right: .5rem;
+}
+
+header ul li a {
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+hr {
+  margin: 1.5rem 0;
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+@media(min-width: 40rem) {
+  header {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: .75rem;
+  }
+
+  header h1 {
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+  }
+
+  header ul li {
+    margin-bottom: .25rem;
+    font-size: 1.05rem;
+  }
+
+  hr {
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+}
