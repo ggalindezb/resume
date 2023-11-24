@@ -52,7 +52,8 @@ header ul li a {
 }
 
 hr {
-  margin: 1.5rem 0;
+  margin: 0;
+  margin-top: 1.5rem;
   overflow: visible;
   padding: 0;
   border: none;
@@ -69,6 +70,53 @@ hr:after {
     font-size: 1.5em;
     padding: 0 0.25em;
     background: white;
+}
+
+main section h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-green);
+}
+
+main section article h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: .25rem;
+}
+
+main section article h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--dark-gray);
+  margin: 0;
+  margin-bottom: .25rem;
+}
+
+main section article span {
+  font-size: 1rem;
+  color: var(--light-gray);
+}
+
+main section article ul:first-of-type {
+  margin-top: .75rem;
+}
+
+main section article ul {
+  margin: 0;
+  list-style: symbols(cyclic "♪" "♫" "♩" "♬");
+}
+
+main section article ul li {
+  margin-bottom: .5rem;
+  padding-left: .25rem;
+}
+
+main section article ul li::marker {
+  color: var(--light-gray);
 }
 
 @media(min-width: 40rem) {
@@ -96,5 +144,10 @@ hr:after {
   hr {
     width: 70%;
     margin: 1.5rem auto;
+  }
+
+  main {
+    width: 70%;
+    margin: 0 auto;
   }
 }
