@@ -6,7 +6,39 @@
   --rails-red: #D30001;
   --angular-red: #DD0031;
   --css-blue: #2965F1;
+  --heroku-purple: #634987;
   --aws-orange: #EC912D;
+  --react-blue: #149ECA;
+  --docker-blue: #1D63ED;
+}
+
+/* Badges */
+span i.ruby {
+  color: var(--rails-red);
+}
+
+span i.angular {
+  color: var(--angular-red);
+}
+
+span i.css {
+  color: var(--css-blue);
+}
+
+span i.heroku {
+  color: var(--heroku-purple);
+}
+
+span i.aws {
+  color: var(--aws-orange);
+}
+
+span i.react {
+  color: var(--react-blue);
+}
+
+span i.docker {
+  color: var(--react-blue);
 }
 
 body {
@@ -76,6 +108,10 @@ hr:after {
     background: white;
 }
 
+main section article {
+  margin-bottom: 1.5rem;
+}
+
 main section h2 {
   margin: 0;
   margin-bottom: 1rem;
@@ -89,6 +125,12 @@ main section article h3 {
   font-weight: 600;
   margin: 0;
   margin-bottom: .25rem;
+}
+
+main section article h3 a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px dotted var(--dark-gray);
 }
 
 main section h3 span i {
@@ -107,22 +149,6 @@ main section article h4 {
 
 main section article h4 span {
   margin-left: 1rem;
-}
-
-main section article h4 span i:nth-child(1) {
-  color: var(--rails-red);
-}
-
-main section article h4 span i:nth-child(2) {
-  color: var(--angular-red);
-}
-
-main section article h4 span i:nth-child(3) {
-  color: var(--css-blue);
-}
-
-main section article h4 span i:nth-child(4) {
-  color: var(--aws-orange);
 }
 
 main section article span {
