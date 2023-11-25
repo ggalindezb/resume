@@ -427,6 +427,14 @@ section#skills #perl-progress .progress {
     width: 70%;
     margin: 0 auto;
   }
+
+  .tuple {
+    display: flex;
+  }
+
+  .tuple article {
+    width: 50%;
+  }
 }
 
 @media print {
