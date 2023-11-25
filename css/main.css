@@ -13,6 +13,7 @@
   --vue-green: #3FB27F;
   --js-yellow: #EFD81D;
   --redis-red: #B52922;
+  --python-yellow: #FFE56B;
 }
 
 /* Badges */
@@ -54,6 +55,10 @@ span i.js {
 
 span i.redis {
   color: var(--redis-red);
+}
+
+span i.python {
+  color: var(--python-yellow);
 }
 
 button.control {
