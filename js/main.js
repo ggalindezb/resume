@@ -2,7 +2,7 @@ let condensedExperience = false
 
 const toggleExperience = (_event) => {
   condensedExperience = !condensedExperience
-  const display = condensedExperience ? 'none' : 'block'
+  const display = condensedExperience ? 'none' : 'list-item'
 
   document.querySelectorAll('.expanded-description').forEach(node => {
     node.style.display = display
