@@ -396,7 +396,24 @@ section#skills #perl-progress .progress {
   width: 20%;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
+.back-to-top {
+  background-color: var(--light-green);
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
 @media(min-width: 40rem) {
+  body {
+    margin: 0;
+  }
+
   header {
     width: 70%;
     margin: 0 auto;
@@ -438,6 +455,11 @@ section#skills #perl-progress .progress {
 }
 
 @media print {
+  body {
+    --webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
+
   .control {
     display: none;
   }
