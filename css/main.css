@@ -10,6 +10,7 @@
   --aws-orange: #EC912D;
   --react-blue: #149ECA;
   --docker-blue: #1D63ED;
+  --vue-green: #3FB27F;
 }
 
 /* Badges */
@@ -39,6 +40,10 @@ span i.react {
 
 span i.docker {
   color: var(--react-blue);
+}
+
+span i.vue {
+  color: var(--vue-green);
 }
 
 body {
