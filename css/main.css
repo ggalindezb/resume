@@ -185,12 +185,12 @@ main section h3 span i {
   margin: 0;
 }
 
-main section h3 span.defunct i {
+main section#experience h3 span.defunct i {
   margin-left: .75rem;
   margin-right: .25rem;
 }
 
-main section article h4 {
+main section#experience article h4 {
   font-size: 1rem;
   font-weight: 500;
   font-style: italic;
@@ -199,39 +199,41 @@ main section article h4 {
   margin-bottom: .25rem;
 }
 
-main section article h4 span {
+main section#experience article h4 span {
   margin-left: 1rem;
 }
 
-main section article span {
+main section#experience article span {
   font-size: 1rem;
   color: var(--light-gray);
 }
 
-main section article span i {
+main section#experience article span i {
   margin-right: .5rem;
 }
 
-main section article ul:first-of-type {
+main section#experience article ul:first-of-type {
   margin-top: .75rem;
 }
 
-main section article ul {
+main section#experience article ul {
   margin: 0;
   padding-right: 2rem;
   list-style: symbols(cyclic "♪" "♫" "♩" "♬");
 }
 
-main section article ul li {
+main section#experience article ul li {
   text-align: justify;
   line-height: 1.25rem;
   margin-bottom: .5rem;
   padding-left: .25rem;
 }
 
-main section article ul li::marker {
+main section#experience article ul li::marker {
   color: var(--light-gray);
 }
+
+main section#skills {}
 
 @media(min-width: 40rem) {
   header {
