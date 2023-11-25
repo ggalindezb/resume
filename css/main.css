@@ -5,6 +5,7 @@
   --dark-green: #00AB44;
   --rails-red: #D30001;
   --angular-red: #DD0031;
+  --svelte-orange: #FF3E00;
   --css-blue: #2965F1;
   --heroku-purple: #634987;
   --aws-orange: #EC912D;
@@ -26,6 +27,10 @@ span i.ruby {
 
 span i.angular {
   color: var(--angular-red);
+}
+
+span i.svelte {
+  color: var(--svelte-orange);
 }
 
 span i.css {
@@ -252,11 +257,34 @@ main section article ul li::marker {
 
   hr {
     width: 70%;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 0;
   }
 
   main {
     width: 70%;
     margin: 0 auto;
   }
+}
+
+@media print {
+  .control {
+    display: none;
+  }
+
+  header {
+    width: 90%;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  main {
+    width: 90%;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 2mm;
 }
