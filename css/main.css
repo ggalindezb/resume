@@ -11,6 +11,8 @@
   --react-blue: #149ECA;
   --docker-blue: #1D63ED;
   --vue-green: #3FB27F;
+  --js-yellow: #EFD81D;
+  --redis-red: #B52922;
 }
 
 /* Badges */
@@ -44,6 +46,14 @@ span i.docker {
 
 span i.vue {
   color: var(--vue-green);
+}
+
+span i.js {
+  color: var(--js-yellow);
+}
+
+span i.redis {
+  color: var(--redis-red);
 }
 
 body {
@@ -139,6 +149,10 @@ main section article h3 a {
 }
 
 main section h3 span i {
+  margin: 0;
+}
+
+main section h3 span.defunct i {
   margin-left: .75rem;
   margin-right: .25rem;
 }
