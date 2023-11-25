@@ -18,66 +18,67 @@
   --graphql-pink: #F6009B;
   --java-red: #EA3032;
   --perl-blue: #004065;
+  --linux-black: #2e2e30;
 }
 
 /* Badges */
-span i.ruby {
+i.ruby {
   color: var(--rails-red);
 }
 
-span i.angular {
+i.angular {
   color: var(--angular-red);
 }
 
-span i.svelte {
+i.svelte {
   color: var(--svelte-orange);
 }
 
-span i.css {
+i.css {
   color: var(--css-blue);
 }
 
-span i.heroku {
+i.heroku {
   color: var(--heroku-purple);
 }
 
-span i.aws {
+i.aws {
   color: var(--aws-orange);
 }
 
-span i.react {
+i.react {
   color: var(--react-blue);
 }
 
-span i.docker {
+i.docker {
   color: var(--react-blue);
 }
 
-span i.vue {
+i.vue {
   color: var(--vue-green);
 }
 
-span i.js {
+i.js {
   color: var(--js-yellow);
 }
 
-span i.redis {
+i.redis {
   color: var(--redis-red);
 }
 
-span i.python {
+i.python {
   color: var(--python-yellow);
 }
 
-span i.graphql {
+i.graphql {
   color: var(--graphql-pink);
 }
 
-span i.java {
+i.java {
   color: var(--java-red);
 }
 
-span i.perl {
+i.perl {
   color: var(--perl-blue);
 }
 
@@ -91,6 +92,7 @@ button.control {
 
 body {
   font-family: 'Raleway';
+  margin: .75rem;
 }
 
 header {
@@ -233,7 +235,166 @@ main section#experience article ul li::marker {
   color: var(--light-gray);
 }
 
-main section#skills {}
+section#skills ul {
+  list-style: none;
+}
+
+section#skills ul li {
+  margin-bottom: .5rem;
+}
+
+.progress-bar {
+  margin-top: .25rem;
+  width: 80%;
+}
+
+.progress {
+  height: .25rem;
+}
+
+section#skills #ruby-progress {
+  border: 1px solid var(--rails-red);
+}
+
+section#skills #ruby-progress .progress {
+  background-color: var(--rails-red);
+  width: 100%;
+}
+
+section#skills #js-progress {
+  border: 1px solid var(--js-yellow);
+}
+
+section#skills #js-progress .progress {
+  background-color: var(--js-yellow);
+  width: 70%;
+}
+
+section#skills #css-progress {
+  border: 1px solid var(--css-blue);
+}
+
+section#skills #css-progress .progress {
+  background-color: var(--css-blue);
+  width: 75%;
+}
+
+section#skills #angular-progress {
+  border: 1px solid var(--angular-red);
+}
+
+section#skills #angular-progress .progress {
+  background-color: var(--angular-red);
+  width: 70%;
+}
+
+section#skills #react-progress {
+  border: 1px solid var(--react-blue);
+}
+
+section#skills #react-progress .progress {
+  background-color: var(--react-blue);
+  width: 65%;
+}
+
+section#skills #vue-progress {
+  border: 1px solid var(--vue-green);
+}
+
+section#skills #vue-progress .progress {
+  background-color: var(--vue-green);
+  width: 30%;
+}
+
+section#skills #svelte-progress {
+  border: 1px solid var(--svelte-orange);
+}
+
+section#skills #svelte-progress .progress {
+  background-color: var(--svelte-orange);
+  width: 35%;
+}
+
+section#skills #python-progress {
+  border: 1px solid var(--python-yellow);
+}
+
+section#skills #python-progress .progress {
+  background-color: var(--python-yellow);
+  width: 55%;
+}
+
+section#skills #heroku-progress {
+  border: 1px solid var(--heroku-purple);
+}
+
+section#skills #heroku-progress .progress {
+  background-color: var(--heroku-purple);
+  width: 85%;
+}
+
+section#skills #linux-progress {
+  border: 1px solid var(--linux-black);
+}
+
+section#skills #linux-progress .progress {
+  background-color: var(--linux-black);
+  width: 95%;
+}
+
+section#skills #docker-progress {
+  border: 1px solid var(--docker-blue);
+}
+
+section#skills #docker-progress .progress {
+  background-color: var(--docker-blue);
+  width: 75%;
+}
+
+section#skills #aws-progress {
+  border: 1px solid var(--aws-orange);
+}
+
+section#skills #aws-progress .progress {
+  background-color: var(--aws-orange);
+  width: 45%;
+}
+
+section#skills #redis-progress {
+  border: 1px solid var(--redis-red);
+}
+
+section#skills #redis-progress .progress {
+  background-color: var(--redis-red);
+  width: 95%;
+}
+
+section#skills #graphql-progress {
+  border: 1px solid var(--graphql-pink);
+}
+
+section#skills #graphql-progress .progress {
+  background-color: var(--graphql-pink);
+  width: 35%;
+}
+
+section#skills #java-progress {
+  border: 1px solid var(--java-red);
+}
+
+section#skills #java-progress .progress {
+  background-color: var(--java-red);
+  width: 15%;
+}
+
+section#skills #perl-progress {
+  border: 1px solid var(--perl-blue);
+}
+
+section#skills #perl-progress .progress {
+  background-color: var(--perl-blue);
+  width: 20%;
+}
 
 @media(min-width: 40rem) {
   header {
