@@ -14,7 +14,9 @@
   --js-yellow: #EFD81D;
   --redis-red: #B52922;
   --python-yellow: #FFE56B;
-  --graphql-pink: #F6009B
+  --graphql-pink: #F6009B;
+  --java-red: #EA3032;
+  --perl-blue: #004065;
 }
 
 /* Badges */
@@ -64,6 +66,14 @@ span i.python {
 
 span i.graphql {
   color: var(--graphql-pink);
+}
+
+span i.java {
+  color: var(--java-red);
+}
+
+span i.perl {
+  color: var(--perl-blue);
 }
 
 button.control {
