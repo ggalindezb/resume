@@ -162,6 +162,10 @@ main section article {
   margin-bottom: 1.5rem;
 }
 
+main section {
+  margin-bottom: 2rem;
+}
+
 main section h2 {
   margin: 0;
   margin-bottom: 1rem;
@@ -187,12 +191,12 @@ main section h3 span i {
   margin: 0;
 }
 
-main section#experience h3 span.defunct i {
+main section h3 span.defunct i {
   margin-left: .75rem;
   margin-right: .25rem;
 }
 
-main section#experience article h4 {
+main section article h4 {
   font-size: 1rem;
   font-weight: 500;
   font-style: italic;
@@ -201,37 +205,37 @@ main section#experience article h4 {
   margin-bottom: .25rem;
 }
 
-main section#experience article h4 span {
+main section article h4 span {
   margin-left: 1rem;
 }
 
-main section#experience article span {
+main section article span {
   font-size: 1rem;
   color: var(--light-gray);
 }
 
-main section#experience article span i {
+main section article span i {
   margin-right: .5rem;
 }
 
-main section#experience article ul:first-of-type {
+main section article ul:first-of-type {
   margin-top: .75rem;
 }
 
-main section#experience article ul {
+main section article ul {
   margin: 0;
   padding-right: 2rem;
   list-style: symbols(cyclic "♪" "♫" "♩" "♬");
 }
 
-main section#experience article ul li {
+main section article ul li {
   text-align: justify;
   line-height: 1.25rem;
   margin-bottom: .5rem;
   padding-left: .25rem;
 }
 
-main section#experience article ul li::marker {
+main section article ul li::marker {
   color: var(--light-gray);
 }
 
