@@ -9,6 +9,11 @@ const toggleExperience = (_event) => {
   })
 }
 
+const backToTop = (_event) => {
+  document.querySelector('header').scrollIntoView({ behavior: 'smooth' })
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
   document.querySelector('button.control').addEventListener('click', toggleExperience)
+  document.querySelector('.back-to-top').addEventListener('click', backToTop)
 })
