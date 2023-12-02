@@ -163,7 +163,7 @@ main section article {
 }
 
 main section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 main section h2 {
@@ -239,11 +239,15 @@ main section article ul li::marker {
   color: var(--light-gray);
 }
 
-section#skills ul {
+section#skills-main {
+  margin-bottom: 2rem;
+}
+
+section#skills-main ul {
   list-style: none;
 }
 
-section#skills ul li {
+section#skills-main ul li {
   margin-bottom: .5rem;
 }
 
@@ -256,148 +260,174 @@ section#skills ul li {
   height: .25rem;
 }
 
-section#skills #ruby-progress {
+section#skills-main #ruby-progress {
   border: 1px solid var(--rails-red);
 }
 
-section#skills #ruby-progress .progress {
+section#skills-main #ruby-progress .progress {
   background-color: var(--rails-red);
   width: 100%;
 }
 
-section#skills #js-progress {
+section#skills-main #js-progress {
   border: 1px solid var(--js-yellow);
 }
 
-section#skills #js-progress .progress {
+section#skills-main #js-progress .progress {
   background-color: var(--js-yellow);
   width: 70%;
 }
 
-section#skills #css-progress {
+section#skills-main #css-progress {
   border: 1px solid var(--css-blue);
 }
 
-section#skills #css-progress .progress {
+section#skills-main #css-progress .progress {
   background-color: var(--css-blue);
   width: 75%;
 }
 
-section#skills #angular-progress {
+section#skills-main #angular-progress {
   border: 1px solid var(--angular-red);
 }
 
-section#skills #angular-progress .progress {
+section#skills-main #angular-progress .progress {
   background-color: var(--angular-red);
   width: 70%;
 }
 
-section#skills #react-progress {
+section#skills-main #react-progress {
   border: 1px solid var(--react-blue);
 }
 
-section#skills #react-progress .progress {
+section#skills-main #react-progress .progress {
   background-color: var(--react-blue);
   width: 65%;
 }
 
-section#skills #vue-progress {
+section#skills-main #vue-progress {
   border: 1px solid var(--vue-green);
 }
 
-section#skills #vue-progress .progress {
+section#skills-main #vue-progress .progress {
   background-color: var(--vue-green);
   width: 30%;
 }
 
-section#skills #svelte-progress {
+section#skills-main #svelte-progress {
   border: 1px solid var(--svelte-orange);
 }
 
-section#skills #svelte-progress .progress {
+section#skills-main #svelte-progress .progress {
   background-color: var(--svelte-orange);
   width: 35%;
 }
 
-section#skills #python-progress {
+section#skills-main #python-progress {
   border: 1px solid var(--python-yellow);
 }
 
-section#skills #python-progress .progress {
+section#skills-main #python-progress .progress {
   background-color: var(--python-yellow);
   width: 55%;
 }
 
-section#skills #heroku-progress {
+section#skills-main #heroku-progress {
   border: 1px solid var(--heroku-purple);
 }
 
-section#skills #heroku-progress .progress {
+section#skills-main #heroku-progress .progress {
   background-color: var(--heroku-purple);
   width: 85%;
 }
 
-section#skills #linux-progress {
+section#skills-main #linux-progress {
   border: 1px solid var(--linux-black);
 }
 
-section#skills #linux-progress .progress {
+section#skills-main #linux-progress .progress {
   background-color: var(--linux-black);
   width: 95%;
 }
 
-section#skills #docker-progress {
+section#skills-main #docker-progress {
   border: 1px solid var(--docker-blue);
 }
 
-section#skills #docker-progress .progress {
+section#skills-main #docker-progress .progress {
   background-color: var(--docker-blue);
   width: 75%;
 }
 
-section#skills #aws-progress {
+section#skills-main #aws-progress {
   border: 1px solid var(--aws-orange);
 }
 
-section#skills #aws-progress .progress {
+section#skills-main #aws-progress .progress {
   background-color: var(--aws-orange);
   width: 45%;
 }
 
-section#skills #redis-progress {
+section#skills-main #redis-progress {
   border: 1px solid var(--redis-red);
 }
 
-section#skills #redis-progress .progress {
+section#skills-main #redis-progress .progress {
   background-color: var(--redis-red);
   width: 95%;
 }
 
-section#skills #graphql-progress {
+section#skills-main #graphql-progress {
   border: 1px solid var(--graphql-pink);
 }
 
-section#skills #graphql-progress .progress {
+section#skills-main #graphql-progress .progress {
   background-color: var(--graphql-pink);
   width: 35%;
 }
 
-section#skills #java-progress {
+section#skills-main #java-progress {
   border: 1px solid var(--java-red);
 }
 
-section#skills #java-progress .progress {
+section#skills-main #java-progress .progress {
   background-color: var(--java-red);
   width: 15%;
 }
 
-section#skills #perl-progress {
+section#skills-main #perl-progress {
   border: 1px solid var(--perl-blue);
 }
 
-section#skills #perl-progress .progress {
+section#skills-main #perl-progress .progress {
   background-color: var(--perl-blue);
   width: 20%;
+}
+
+section#skills-summary {
+  display: none;
+}
+
+section#skills-summary > h2 {
+  margin-bottom: 0;
+}
+
+section#skills-summary ul li {
+  list-style: none;
+}
+
+.skills-summary-block {
+  display: flex;
+}
+
+.skills-summary-block > div {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.skills-summary-block > div > span {
+  font-weight: 600;
+  font-size: large;
 }
 
 footer {
@@ -455,6 +485,7 @@ footer {
 
   .tuple article {
     width: 50%;
+    margin-bottom: 1rem;
   }
 }
 
