@@ -33,6 +33,10 @@ const toggleAts = () => {
   }
 }
 
+const printDocument = () => {
+  window.print()
+}
+
 const backToTop = (_event) => {
   document.querySelector('header').scrollIntoView({ behavior: 'smooth' })
 }
@@ -40,5 +44,6 @@ const backToTop = (_event) => {
 document.addEventListener("DOMContentLoaded", (event) => {
   document.querySelector('#toggle-summary').addEventListener('click', toggleSummaryMode)
   document.querySelector('#toggle-ats').addEventListener('click', toggleAts)
+  document.querySelector('#print-document').addEventListener('click', printDocument)
   document.querySelector('.back-to-top').addEventListener('click', backToTop)
 })
