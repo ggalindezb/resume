@@ -82,12 +82,18 @@ i.perl {
   color: var(--perl-blue);
 }
 
+.controls {
+  text-align: center;
+}
+
 button.control {
-  background-color: white;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--dark-green);
   border-radius: 10px;
   padding: .5rem;
   margin-bottom: 1rem;
+  background: var(--light-green);
+  color: white;
+  font-weight: 500;
 }
 
 body {
