@@ -498,6 +498,10 @@ footer {
 }
 
 @media print {
+  html {
+    font-size: 12px;
+  }
+
   body {
     --webkit-print-color-adjust:exact !important;
     print-color-adjust:exact !important;
