@@ -487,6 +487,14 @@ footer {
     width: 50%;
     margin-bottom: 1rem;
   }
+
+  section#experience.ats .tuple {
+    display: block;
+  }
+
+  section#experience.ats .tuple article {
+    width: 100%;
+  }
 }
 
 @media print {

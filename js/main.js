@@ -1,4 +1,5 @@
 let summaryMode = false
+let atsMode = false
 
 const toggleSummaryMode = (_event) => {
   summaryMode = !summaryMode
@@ -22,11 +23,22 @@ const toggleSkills = () => {
   document.querySelector('#skills-summary').style.display = summaryDisplay
 }
 
+const toggleAts = () => {
+  atsMode = !atsMode
+
+  if(atsMode) {
+    document.querySelector('section#experience').classList.add('ats')
+  } else {
+    document.querySelector('section#experience').classList.remove('ats')
+  }
+}
+
 const backToTop = (_event) => {
   document.querySelector('header').scrollIntoView({ behavior: 'smooth' })
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  document.querySelector('button.control').addEventListener('click', toggleSummaryMode)
+  document.querySelector('#toggle-summary').addEventListener('click', toggleSummaryMode)
+  document.querySelector('#toggle-ats').addEventListener('click', toggleAts)
   document.querySelector('.back-to-top').addEventListener('click', backToTop)
 })
