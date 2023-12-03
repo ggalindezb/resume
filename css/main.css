@@ -423,7 +423,7 @@ section#skills-summary ul li {
 }
 
 .skills-summary-block {
-  display: flex;
+  display: block;
 }
 
 .skills-summary-block > div {
@@ -500,6 +500,10 @@ footer {
 
   section#experience.ats .tuple article {
     width: 100%;
+  }
+
+  .skills-summary-block {
+    display: flex;
   }
 }
 
