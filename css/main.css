@@ -86,10 +86,6 @@ i.perl {
   text-align: center;
 }
 
-#toggle-ats {
-  display: none;
-}
-
 button.control {
   border: 1px solid var(--dark-green);
   border-radius: 10px;

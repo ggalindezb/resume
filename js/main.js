@@ -1,14 +1,16 @@
-let summaryMode = false
+let summarizedExperience = false
+let summarizedSkills = false
 let atsMode = false
 
 const toggleSummaryMode = (_event) => {
-  summaryMode = !summaryMode
+  summarizedExperience = !summarizedExperience
+  summarizedSkills = atsMode ? true : !summarizedSkills
   toggleExperience()
   toggleSkills()
 }
 
 const toggleExperience = () => {
-  const display = summaryMode ? 'none' : 'list-item'
+  const display = summarizedExperience ? 'none' : 'list-item'
 
   document.querySelectorAll('.expanded-description').forEach(node => {
     node.style.display = display
@@ -16,8 +18,8 @@ const toggleExperience = () => {
 }
 
 const toggleSkills = () => {
-  const mainDisplay = summaryMode ? 'none' : 'block'
-  const summaryDisplay = summaryMode ? 'block' : 'none'
+  const mainDisplay = summarizedSkills ? 'none' : 'block'
+  const summaryDisplay = summarizedSkills ? 'block' : 'none'
 
   document.querySelector('#skills-main').style.display = mainDisplay
   document.querySelector('#skills-summary').style.display = summaryDisplay
@@ -25,6 +27,8 @@ const toggleSkills = () => {
 
 const toggleAts = () => {
   atsMode = !atsMode
+  summarizedSkills = atsMode
+  toggleSkills()
 
   if(atsMode) {
     document.querySelector('section#experience').classList.add('ats')
