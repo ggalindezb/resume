@@ -526,7 +526,7 @@ footer {
   }
 
   .control {
-    display: none;
+    display: none !important;
   }
 
   header {
