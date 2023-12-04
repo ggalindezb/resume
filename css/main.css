@@ -433,7 +433,6 @@ section#skills-summary ul li {
 
 .skills-summary-block > div > span {
   font-weight: 600;
-  font-size: large;
 }
 
 footer {
@@ -517,8 +516,8 @@ footer {
   }
 
   body {
-    --webkit-print-color-adjust:exact !important;
-    print-color-adjust:exact !important;
+    --webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .control {
@@ -540,5 +539,5 @@ footer {
 
 @page {
   size: auto;
-  margin: 2mm;
+  margin: 4mm 0mm;
 }
