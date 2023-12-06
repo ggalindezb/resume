@@ -133,6 +133,14 @@ header ul li {
   margin-bottom: .25rem;
 }
 
+body.ats header ul {
+  display: flex;
+}
+
+body.ats header ul li {
+  margin-right: 2rem;
+}
+
 header ul li i {
   margin-right: .5rem;
 }
@@ -511,8 +519,13 @@ footer {
 }
 
 @media print {
+  @page {
+    size: auto;
+    margin: 10mm 4mm;
+  }
+
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   body {
@@ -528,6 +541,10 @@ footer {
     width: 90%;
   }
 
+  body.ats header ul li {
+    font-size: .75rem;
+  }
+
   hr {
     width: 90%;
   }
@@ -535,9 +552,4 @@ footer {
   main {
     width: 90%;
   }
-}
-
-@page {
-  size: auto;
-  margin: 4mm 0mm;
 }

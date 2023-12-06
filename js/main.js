@@ -32,8 +32,10 @@ const toggleAts = () => {
 
   if(atsMode) {
     document.querySelector('section#experience').classList.add('ats')
+    document.querySelector('body').classList.add('ats')
   } else {
     document.querySelector('section#experience').classList.remove('ats')
+    document.querySelector('body').classList.remove('ats')
   }
 }
 
