@@ -253,6 +253,10 @@ main section article ul li::marker {
   color: var(--light-gray);
 }
 
+main section article ul li.lead-description {
+  font-weight: 600;
+}
+
 section#skills-main {
   margin-bottom: 2rem;
 }
