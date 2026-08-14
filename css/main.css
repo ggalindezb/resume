@@ -19,6 +19,12 @@
   --java-red: #EA3032;
   --perl-blue: #004065;
   --linux-black: #2e2e30;
+  --mysql-blue: #00758F;
+  --mssql-red: #CC292B;
+  --gcp-blue: #4285F4;
+  --datastore-blue: #4285F4;
+  --vb-blue: #136099;
+  --csharp-purple: #9B4F96;
 }
 
 /* Badges */
@@ -51,7 +57,7 @@ i.react {
 }
 
 i.docker {
-  color: var(--react-blue);
+  color: var(--docker-blue);
 }
 
 i.vue {
@@ -80,6 +86,30 @@ i.java {
 
 i.perl {
   color: var(--perl-blue);
+}
+
+i.mysql {
+  color: var(--mysql-blue);
+}
+
+i.mssql {
+  color: var(--mssql-red);
+}
+
+i.gcp {
+  color: var(--gcp-blue);
+}
+
+i.datastore {
+  color: var(--datastore-blue);
+}
+
+i.vb {
+  color: var(--vb-blue);
+}
+
+i.csharp {
+  color: var(--csharp-purple);
 }
 
 .controls {
