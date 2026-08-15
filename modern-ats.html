@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerardo Galindez - Resume</title>
+  <style>
+    /* Modern, ATS-friendly typography and layout */
+    :root {
+      --text-color: #333333;
+      --heading-color: #111111;
+      --link-color: #0056b3;
+      --border-color: #e0e0e0;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    body {
+      font-family: var(--font-family);
+      color: var(--text-color);
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-size: 11pt; /* Good baseline for PDF export */
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--heading-color);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 24pt;
+      margin-bottom: 0.25rem;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    h2 {
+      font-size: 14pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 4px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 12pt;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    h4 {
+      font-size: 11pt;
+      font-weight: 500;
+      font-style: italic;
+      color: #555555;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 10pt;
+    }
+
+    .contact-info a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .contact-info span {
+      margin: 0 6px;
+      color: #999;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .job {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .job-company {
+      font-weight: bold;
+    }
+
+    .job-date, .job-location {
+      font-size: 10pt;
+      color: #666;
+    }
+
+    .skills-section {
+      margin-bottom: 16px;
+    }
+    
+    .skills-category {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    
+    .skills-list {
+      margin-bottom: 8px;
+    }
+
+    .summary-role {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body {
+        font-size: 10pt;
+      }
+      main {
+        padding: 0;
+      }
+      a {
+        color: black !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Gerardo Gal&iacute;ndez</h1>
+      <div class="contact-info">
+        Sr. Full Stack Engineer<br>
+        (+52) 55-48-83-81-06 <span>|</span> <a href="mailto:ggalindezb@gmail.com">ggalindezb@gmail.com</a> <span>|</span> <a href="https://github.com/ggalindezb">github.com/ggalindezb</a> <span>|</span> <a href="https://www.linkedin.com/in/gerardogalindez/">linkedin.com/in/gerardogalindez</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Senior Full Stack Engineer and Engineering Leader with 15 years of experience architecting, stabilizing, and scaling solutions across a diverse range of industries—including GovTech, FinTech, HealthTech, marketing SaaS, and enterprise marketplaces. A builder at heart, I am passionate about using technology to improve and augment experiences that people find both valuable and useful. Proven track record of bridging technical architecture with business strategy, leading cross-functional teams, and delivering high-performance, compliant platforms.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skills-category">Languages & Frameworks:</span>
+        Ruby/Rails, JS/TS, Python, Perl, React, Angular, Vue, Svelte, CSS, GraphQL
+      </div>
+      <div class="skills-list">
+        <span class="skills-category">Platform & Infrastructure:</span>
+        AWS, Docker, Linux, Heroku, Redis, MySQL, GCP
+      </div>
+      <div class="skills-list">
+        <span class="skills-category">AI & LLMs:</span>
+        Claude Code (Haiku, Sonnet, Opus, Fable), Google Antigravity (Gemini Pro), GPT (Luna)
+      </div>
+      <div class="skills-list">
+        <span class="skills-category">Leadership & Management:</span>
+        Cross-Functional Team Building, Strategic Alignment, Resource & Capacity Planning
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>
+          <span class="job-company">GovPilot / SDL</span>
+          <span class="job-location">Remote</span>
+        </h3>
+        <h4>
+          <span class="job-title">Engineering Manager</span>
+          <span class="job-date">Nov 2025 &ndash; Present</span>
+        </h4>
+        <ul>
+          <li>Led the engineering team through the acquisition and integration of several govtech products, consolidating them into a single platform.</li>
+          <li>Integrated AI-driven development practices to ensure high responsiveness and smooth delivery in a rapidly changing market.</li>
+          <li>Stabilized and modernized a 20+ year-old legacy component that secured nearly half of the company's revenue.</li>
+          <li>Built a fully-fledged RAG system for a customer knowledge base, directly reducing support volume by 20%.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>
+          <span class="job-company">Traject Data / Grade.us</span>
+          <span class="job-location">Remote</span>
+        </h3>
+        <h4>
+          <span class="job-title">Sr. Software Engineer</span>
+          <span class="job-date">Dec 2023 &ndash; Nov 2025</span>
+        </h4>
+        <ul>
+          <li>Drove key retention initiatives by developing targeted product improvements that reduced churn among enterprise clients.</li>
+          <li>Partnered with VIP clients to align roadmap priorities with business goals and strengthen long-term relationships.</li>
+          <li>Revamped the platform's highest-value features, delivering major performance gains and improving service reliability during peak usage.</li>
+          <li>Collaborated with product, design, and support teams to ensure releases met operational and customer success KPIs.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>
+          <span class="job-company">Flow Inc</span>
+          <span class="job-location">SFO / Remote</span>
+        </h3>
+        <h4>
+          <span class="job-title">Lead Software Engineer</span>
+          <span class="job-date">Nov 2021 &ndash; Nov 2023</span>
+        </h4>
+        <ul>
+          <li>Rebuilt engineering foundations after full team turnover, restoring product momentum and institutional knowledge of the Ruby API.</li>
+          <li>Led and mentored a cross-functional team of 4 engineers, overseeing sprint planning, code quality, and technical architecture.</li>
+          <li>Spearheaded the development of a secure Data Room feature under tight deadlines, enabling the company's largest enterprise sale to date.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>
+          <span class="job-company">This is Alice</span>
+          <span class="job-location">NYC / Remote</span>
+        </h3>
+        <h4>
+          <span class="job-title">Tech Lead</span>
+          <span class="job-date">Jun 2020 &ndash; Oct 2021</span>
+        </h4>
+        <ul>
+          <li>Led a 5-engineer team through a high-stakes PCI compliance rebuild, successfully delivering after four prior teams had failed.</li>
+          <li>Redesigned critical backend and frontend architecture across Ruby and React to improve scalability and developer velocity.</li>
+          <li>Implemented onboarding improvements that directly increased user engagement and retention metrics.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>
+          <span class="job-company">Addy Invest</span>
+          <span class="job-location">VYR / Remote</span>
+        </h3>
+        <h4>
+          <span class="job-title">Founding Engineer</span>
+          <span class="job-date">Jan 2020 &ndash; Dec 2020</span>
+        </h4>
+        <ul>
+          <li>Stabilized and optimized a struggling legacy app, resolving severe performance bottlenecks in core operational components.</li>
+          <li>Developed a new SaaS module in Vue.js, successfully expanding the business into B2B markets.</li>
+        </ul>
+      </div>
+
+      <h2>Previous Experience</h2>
+      
+      <div class="summary-role">
+        <span><strong>Sr. Software Engineer</strong> at Payroll Hero / Get Chaos</span>
+        <span class="job-date">Jun 2019 &ndash; Dec 2019</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Ruby Engineer</strong> at 500 Friends</span>
+        <span class="job-date">Mar 2018 &ndash; Jun 2019</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Full Stack Developer</strong> at Cast & Crew</span>
+        <span class="job-date">Mar 2017 &ndash; Feb 2018</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Back End Developer</strong> at MDLIVE</span>
+        <span class="job-date">Mar 2016 &ndash; Feb 2017</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Full Stack Developer</strong> at Breakthrough / Coyalla</span>
+        <span class="job-date">Oct 2014 &ndash; Mar 2016</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Systems Developer</strong> at Oracle</span>
+        <span class="job-date">Jan 2013 &ndash; Aug 2014</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Certifications</h2>
+      <div class="job">
+        <h3>
+          <span class="job-company">Instituto Tecnol&oacute;gico y de Estudios Superiores de Monterrey</span>
+          <span class="job-location">AZP</span>
+        </h3>
+        <h4>
+          <span class="job-title">Computer Systems Engineering</span>
+          <span class="job-date">Aug 2008 &ndash; Dec 2012</span>
+        </h4>
+      </div>
+      <div class="summary-role">
+        <span><strong>Cambridge Level 2 ESOL (Advanced)</strong> &ndash; Brown Couch</span>
+        <span class="job-date">Dec 2008</span>
+      </div>
+      <div class="summary-role">
+        <span><strong>Cambridge Level 1 ESOL (First)</strong> &ndash; Brown Couch</span>
+        <span class="job-date">Dec 2007</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
